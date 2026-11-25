@@ -1,0 +1,17 @@
+# TpsInfo
+# As mensagens usam MiniMessage: https://docs.advntr.dev/minimessage/format.html
+
+alert:
+  # Avisa quem tem a permissão tpsinfo.alert quando o TPS (média de 1 minuto) cair abaixo do limite
+  enabled: true
+  threshold: 17.0
+  check-interval-seconds: 30
+  # Tempo mínimo entre dois alertas
+  cooldown-seconds: 300
+
+prefix: "<dark_gray>[<aqua>TpsInfo</aqua>]</dark_gray> "
+
+messages:
+  alert: "<red>O servidor está lento: <white>%tps%</white> TPS (média de 1 minuto)."
+  reload: "<green>Configuração recarregada."
+  no-permission: "<red>Você não tem permissão para isso."

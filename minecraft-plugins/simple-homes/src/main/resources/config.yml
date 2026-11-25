@@ -1,0 +1,26 @@
+# SimpleHomes
+# As mensagens usam MiniMessage: https://docs.advntr.dev/minimessage/format.html
+
+# Quantas casas cada jogador pode ter
+max-homes: 3
+
+# Segundos de espera antes do teleporte (0 desliga). Se o jogador se mover, cancela.
+teleport-delay-seconds: 3
+
+prefix: "<dark_gray>[<green>Casas</green>]</dark_gray> "
+
+messages:
+  only-players: "<red>Apenas jogadores podem usar este comando."
+  invalid-name: "<red>Nome inválido. Use de 1 a 16 letras, números, _ ou -."
+  home-set: "<green>Casa <white>%name%</white> salva."
+  home-limit: "<red>Você atingiu o limite de <white>%max%</white> casas."
+  home-not-found: "<red>Casa <white>%name%</white> não encontrada."
+  home-deleted: "<yellow>Casa <white>%name%</white> removida."
+  world-missing: "<red>O mundo dessa casa não está carregado."
+  warmup: "<gray>Teleportando em <white>%seconds%s</white>. Não se mova."
+  cancelled: "<red>Teleporte cancelado porque você se moveu."
+  pending: "<red>Você já tem um teleporte em andamento."
+  teleported: "<green>Teleportado para <white>%name%</white>."
+  list: "<gray>Suas casas: <white>%list%"
+  no-homes: "<yellow>Você ainda não tem casas. Use /sethome."
+  usage-delhome: "<red>Use: /delhome [nome]"

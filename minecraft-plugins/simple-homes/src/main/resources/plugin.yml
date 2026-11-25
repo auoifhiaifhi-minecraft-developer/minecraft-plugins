@@ -1,0 +1,35 @@
+name: SimpleHomes
+version: '${version}'
+main: dev.auoifhiaifhi.simplehomes.SimpleHomesPlugin
+api-version: '1.21'
+author: auoifhiaifhi
+description: Casas simples com limite, atraso de teleporte e mensagens configuráveis.
+
+commands:
+  sethome:
+    description: Salva uma casa na sua posição atual
+    usage: /sethome [nome]
+    permission: simplehomes.use
+  home:
+    description: Teleporta para uma casa salva
+    usage: /home [nome]
+    permission: simplehomes.use
+  delhome:
+    description: Remove uma casa salva
+    usage: /delhome <nome>
+    permission: simplehomes.use
+  homes:
+    description: Lista as suas casas
+    usage: /homes
+    permission: simplehomes.use
+
+permissions:
+  simplehomes.use:
+    description: Permite usar os comandos de casa
+    default: true
+  simplehomes.unlimited:
+    description: Ignora o limite de casas
+    default: op
+  simplehomes.bypass-delay:
+    description: Teleporta sem esperar
+    default: op

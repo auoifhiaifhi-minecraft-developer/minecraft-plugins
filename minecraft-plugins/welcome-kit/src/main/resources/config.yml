@@ -1,0 +1,36 @@
+# WelcomeKit
+# As mensagens usam MiniMessage: https://docs.advntr.dev/minimessage/format.html
+# Use <player> para colocar o nome do jogador.
+
+# Deixe vazio ("") para manter a mensagem padrão do Minecraft.
+join-message: "<green>+ <white><player></white> entrou no servidor"
+quit-message: "<red>- <white><player></white> saiu do servidor"
+
+welcome:
+  enabled: true
+  # true = só mostra para quem entra pela primeira vez
+  first-join-only: false
+  title: "<green>Bem-vindo, <player>!"
+  subtitle: "<gray>Aproveite o servidor"
+  messages:
+    - "<gray>Olá, <white><player></white>! Use <yellow>/kit</yellow> para pegar o seu kit."
+
+kit:
+  # Entrega o kit automaticamente na primeira vez que o jogador entra
+  give-on-first-join: true
+  # Tempo de espera do comando /kit (86400 = 24 horas)
+  cooldown-seconds: 86400
+  # Formato: MATERIAL:quantidade (nomes de https://jd.papermc.io/paper/1.21/org/bukkit/Material.html)
+  items:
+    - "STONE_SWORD:1"
+    - "STONE_PICKAXE:1"
+    - "BREAD:16"
+    - "TORCH:32"
+
+prefix: "<dark_gray>[<gold>Kit</gold>]</dark_gray> "
+
+messages:
+  only-players: "<red>Apenas jogadores podem usar este comando."
+  kit-received: "<green>Você recebeu o seu kit!"
+  kit-cooldown: "<red>Você já pegou o kit. Tente de novo em <white><time></white>."
+  reload: "<green>Configuração recarregada."

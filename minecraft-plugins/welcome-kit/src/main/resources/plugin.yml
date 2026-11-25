@@ -1,0 +1,24 @@
+name: WelcomeKit
+version: '${version}'
+main: dev.auoifhiaifhi.welcomekit.WelcomeKitPlugin
+api-version: '1.21'
+author: auoifhiaifhi
+description: Boas-vindas com título, kit inicial automático, comando /kit com tempo de espera e mensagens de entrada e saída.
+
+commands:
+  kit:
+    description: Recebe o kit inicial
+    usage: /kit
+    permission: welcomekit.kit
+  welcomekit:
+    description: Recarrega a configuração do WelcomeKit
+    usage: /welcomekit reload
+    permission: welcomekit.reload
+
+permissions:
+  welcomekit.kit:
+    description: Permite usar /kit
+    default: true
+  welcomekit.reload:
+    description: Permite recarregar a configuração
+    default: op

@@ -1,0 +1,24 @@
+name: TpsInfo
+version: '${version}'
+main: dev.auoifhiaifhi.tpsinfo.TpsInfoPlugin
+api-version: '1.21'
+author: auoifhiaifhi
+description: Relatório de TPS, MSPT, memória e mundos, com alerta para a staff quando o servidor fica lento.
+
+commands:
+  tpsinfo:
+    description: Mostra TPS, MSPT, memória e carga dos mundos
+    usage: /tpsinfo [reload]
+    aliases: [tpsi]
+    permission: tpsinfo.use
+
+permissions:
+  tpsinfo.use:
+    description: Permite ver o relatório
+    default: op
+  tpsinfo.reload:
+    description: Permite recarregar a configuração
+    default: op
+  tpsinfo.alert:
+    description: Recebe o alerta de TPS baixo
+    default: op
